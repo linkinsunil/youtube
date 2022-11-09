@@ -1,6 +1,6 @@
 {
-  "name": "Video Library",
-  "homepage": "http://linkinsunil.github.io/youtube",
+  "name": "video-library",
+  "homepage": "http://linkinsunil.github.io/youtube/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
