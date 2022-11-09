@@ -11,6 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useVideo } from '../context/videoContext.js';
 import { addToHistory } from '../utilities/history-utils.jsx';
+import { dislikeVideo, likeVideo } from '../utilities/like-utils.jsx';
 import {
   addVideoToPlaylist,
   createPlaylist,
@@ -18,6 +19,10 @@ import {
   deleteVideoFromPlaylist,
 } from '../utilities/playlists-utils.jsx';
 import { mobile } from '../utilities/responsive.js';
+import {
+  addToWatchLater,
+  removeFromWatchLater,
+} from '../utilities/watchLater-utils.jsx';
 
 const Container = styled.div`
   width: 90%;
@@ -228,6 +233,8 @@ const Playlist = () => {
     setCurrentPlaylist(playlist);
   };
 
+  console.log('WATCHLATER', watchLater);
+
   return (
     <Container>
       <Left>
@@ -266,21 +273,14 @@ const Playlist = () => {
                   <MenuItem>
                     <WatchLater
                       color='action'
-                      onClick={() =>
-                        dispatch({
-                          type: 'REMOVE_FROM_WATCH-LATER',
-                          payload: item,
-                        })
-                      }
+                      onClick={() => removeFromWatchLater(item, dispatch)}
                     />
                   </MenuItem>
                 ) : (
                   <MenuItem>
                     <WatchLaterOutlined
                       color='action'
-                      onClick={() =>
-                        dispatch({ type: 'ADD_TO_WATCH-LATER', payload: item })
-                      }
+                      onClick={() => addToWatchLater(item, dispatch)}
                     />
                   </MenuItem>
                 )}
@@ -288,24 +288,15 @@ const Playlist = () => {
                 {likedVideos.some(el => el._id === item._id) ? (
                   <MenuItem>
                     <Favorite
-                      type='secondary'
                       color='action'
-                      onClick={() =>
-                        dispatch({
-                          type: 'REMOVE_FROM_LIKED-VIDEOS',
-                          payload: item,
-                        })
-                      }
+                      onClick={() => dislikeVideo(item, dispatch)}
                     />
                   </MenuItem>
                 ) : (
                   <MenuItem>
                     <FavoriteBorder
-                      type='secondary'
                       color='action'
-                      onClick={() =>
-                        dispatch({ type: 'ADD_TO_LIKED-VIDEOS', payload: item })
-                      }
+                      onClick={() => likeVideo(item, dispatch)}
                     />
                   </MenuItem>
                 )}
@@ -324,13 +315,11 @@ const Playlist = () => {
                   <DeleteOutline
                     color='action'
                     onClick={() =>
-                      dispatch({
-                        type: 'REMOVE_VIDEO_FROM_PLAYLIST',
-                        payload: {
-                          id: currentPlaylist.id,
-                          video: item,
-                        },
-                      })
+                      deleteVideoFromPlaylist(
+                        currentPlaylist._id,
+                        item._id,
+                        dispatch
+                      )
                     }
                   />
                 </MenuItem>

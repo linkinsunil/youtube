@@ -2,6 +2,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { useVideo } from '../context/videoContext';
 import { sliderItems } from '../utilities/data';
 import { mobile } from '../utilities/responsive.js';
 
@@ -91,8 +92,9 @@ const Slider = () => {
   const navigate = useNavigate();
 
   const [slideIndex, setSlideIndex] = useState(0);
+  const { dispatch } = useVideo();
 
-  const handleClick = direction => {
+  const handleArrow = direction => {
     if (direction === 'left') {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
     } else {
@@ -100,13 +102,17 @@ const Slider = () => {
     }
   };
 
-  const goBackToShopping = () => {
+  const handleClick = item => {
+    dispatch({
+      type: 'FILTER_BY_CATEGORY',
+      payload: item.categoryName.toLowerCase(),
+    });
     navigate('/feed');
   };
 
   return (
     <Container>
-      <Arrow direction='left' onClick={() => handleClick('left')}>
+      <Arrow direction='left' onClick={() => handleArrow('left')}>
         <ArrowLeftOutlined />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
@@ -116,14 +122,14 @@ const Slider = () => {
               <Image src={item.img} />
             </ImgContainer>
             <InfoContainer>
-              <Title>{item.title}</Title>
+              <Title>{item.categoryName}</Title>
               <Desc>{item.desc}</Desc>
-              <Button onClick={goBackToShopping}>WATCH NOW</Button>
+              <Button onClick={() => handleClick(item)}>WATCH NOW</Button>
             </InfoContainer>
           </Slide>
         ))}
       </Wrapper>
-      <Arrow direction='right' onClick={() => handleClick('right')}>
+      <Arrow direction='right' onClick={() => handleArrow('right')}>
         <ArrowRightOutlined />
       </Arrow>
     </Container>
