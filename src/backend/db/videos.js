@@ -5,114 +5,117 @@
 
 export const videos = [
   {
-    _id: 'ue1NT3QhuVU',
-    title: 'Top 10 Dunks of The Decade',
+    _id: 'jS4aFq5-91M',
+    title: 'JavaScript Programming - Full Course',
     description:
-      'Before the teens come to a close, The Starters count down the Top 10 Dunks of the Decade so far. Watch The Starters daily at 6:00ET throughout the season or get more of them on their website: ',
+      'Learn JavaScript from scratch by solving over a hundred different coding challenges.',
     category: 'javascript',
   },
   {
-    _id: 'f7_YIyCcXLw',
-    title: "NBA 'Amazing Dunk' Moments 💪",
-    description: 'The best dunks so far this 2021-22 season.',
+    _id: 'kUMe1FH4CHE',
+    title: 'Learn HTML – Full Tutorial for Beginners (2022)',
+    description:
+      'Learn HTML in this complete course for beginners. This is an all-in-one beginner tutorial to help you learn web development skills. This course teaches HTML5.',
     category: 'html',
   },
   {
-    _id: 'yBSn5ppNIpY',
-    title: '2022 NBA Slam Dunk Contest Full Highlights',
+    _id: 'OXGznpKZ_sA',
+    title: 'CSS Tutorial – Full Course for Beginners',
     description:
-      'Slam Dunk Context , NBA 2022 .Four dunkers Will have Two dunks in the first Round . They will have three attempts to complete each dunk.',
+      "In this in-depth course, you will learn about all the key features of CSS. This is the most comprehensive CSS course we've published to date. So if you want to become an expert in Cascading Style Sheets, this is the course for you.",
     category: 'css',
   },
   {
-    _id: 'flm-cZ7r6eE',
-    title: 'Stephen Curry’s Top 30 Career 3-Pointers',
+    _id: 'u6gSSpfsoOQ',
+    title: 'React JavaScript Framework for Beginners – Project-Based Course',
     description:
-      'In honor of Steph becoming the all-time 3PM leader, take a look at his top 30 career 3-pointers (regular season and playoffs/Finals included)',
+      'Learn React in this full course for beginners. React is one of the most popular JavaScript frameworks and this course is the perfect place to start your learning journey. You will learn everything you need to know to get started with React by building three different projects.',
     category: 'reactjs',
   },
   {
-    _id: 'XtrUlFGG5Yo',
-    title: 'How to Shoot a 3 Pointer PERFECTLY!!! ',
+    _id: 'Oe421EPjeBE',
+    title: 'Node.js and Express.js - Full Course',
     description:
-      'How to Shoot a 3 Pointer Perfectly! Basketball shooting drills to improve your 3 point accuracy and range. Add these shooting tips to your game today to increase your shooting accuracy and range on the basketball court. LETS GET IT!',
+      'Learn how to use Node and Express in this comprehensive course. First, you will learn the fundamentals of Node and Express. Then, you will learn to build a complex Rest API. Finally, you will build a MERN app and other Node projects.',
     category: 'nodejs',
   },
   {
-    _id: '_f8r12JSHGY',
-    title: 'How to: Get Your First Dunk (How to Dunk a Basketball',
+    _id: 'DZBGEVgL2eE',
+    title: 'Mongoose Crash Course - Beginner Through Advanced',
     description:
-      "In this video we'll go through some helpful and ESSENTIAL tips to implement when learning to Dunk a Basketball!  These tips will help speed up the process of Dunking a Basketball once your Vertical Jump is strong!",
+      "Mongoose is the best way to work with a MongoDB database in Node.js, but it is a pretty complex library. In this video I will explain absolutely everything you need to know about Mongoose including even the more advanced features that other tutorials don't cover.",
     category: 'mongodb',
   },
   {
-    _id: 'ueC9Tem-Qag',
-    title: 'The Full 2022 NBA Contest 🎯 | 2022 NBA All-Star',
+    _id: '5fb2aPlgoys',
+    title: 'JavaScript DOM Manipulation – Full Course for Beginners',
     description:
-      'Karl-Anthony Towns recorded 29 PTS in the Championship Round to win the 2022 MTN DEW 3-Point Contest',
+      "Learn about JavaScript DOM manipulation in this beginner's tutorial. This is when you use JavaScript to add, remove, and modify elements of a website.",
     category: 'javascript',
   },
   {
-    _id: '-Oo4rTrdFHg',
-    title: 'NBA Crossovers and Ankle Breakers of 2022 MOMENTS',
+    _id: 'wPQ1-33teR4',
+    title:
+      'React Tutorial: Build an e-commerce site from scratch using React and Netlify',
     description:
-      'NBA video clips used in this video are licensed through partnership with NBA Playmakers.Music provided by Epidemic SoundThis video features players like Lonzo Ball, Chris Paul, DeMar Derozan, Anthony Davis, Ja Morant and Stephen Curry',
+      'Lean step-by-step how to create a full e-commerce store web site using React.js. Also learn how to deploy the site using Netlify. ',
     category: 'reactjs',
   },
   {
-    _id: '6aA4jkowCOE',
-    title: "NBA's Best Alley-Oops | 2018-19 NBA Regular Season",
+    _id: 'SR5GxoFhIAU',
+    title: 'HTML / CSS Tutorial – Create an Order Summary Component',
     description:
-      "NBA's Best Alley-Oops . 2018 6 season match and 2019 first season . ",
+      'Learn HTML and CSS by creating an order summary component. You can apply the concepts from this video to other types of front-end elements and projects.',
     category: 'html',
   },
   {
-    _id: '-lp2asyRv8w',
-    title: 'Top 10 All-Time Alley Oops in All-Star Game History',
+    _id: 'lRaL-8qZ0mM',
+    title: 'Create a Design System with CSS - Web Development Course',
     description:
-      'Check out the Top 10 alley oops in the 62 year history of the All-Star Game. Visit nba.com/video for more highlights. ',
+      'Learn how to create your own design system while building a Space Travel Website with CSS guru Kevin Powell. You can also follow the interactive Scrimba version of this course by clicking here: https://scrimba.com/learn/spacetravel',
     category: 'css',
   },
   {
-    _id: 'oqBP6hh1k-4',
-    title: 'NBA Self Alley-Oops',
+    _id: 'tvfeBLMA_Q4',
+    title: 'APIs in React Tutorial - Recipe App using React Router',
     description:
-      'Check out the Top self oops in the All-Star Game. Visit nba.com/video for more highlights. ',
+      'Learn how to use external APIs with React and React Router. This tutorial shows how to create a recipe finder application in React.',
     category: 'reactjs',
   },
   {
-    _id: '74cWWlpYE_Q',
-    title: 'NBA - Best Plays of 2021 Season 🔥 ',
+    _id: 'Aj7HLsJenVg',
+    title: 'Frontend Development Course - Create a Blog with HTML & CSS',
     description:
-      'This video features players like: Kyrie Irving, James Harden, Chris Paul, LeBron James, Kevin Durant, Stephen Curry and LaMelo Ball.',
+      'Improve your HTML and CSS skills by creating a blog in this frontend development course.',
     category: 'html',
   },
   {
-    _id: 'T06yJR-Xzd4',
-    title: 'Kobe Bryant Amazing last 3 minutes in his FINAL GAME .',
+    _id: '-qfEOE4vtxE',
+    title: 'Bootstrap CSS Framework - Full Course for Beginners',
     description:
-      'LOS ANGELES (AP) Kobe Bryant scored 60 incredible points. He carried a miserable Los Angeles Lakers team to an improbable comeback victory',
+      'Learn Bootstrap 5 in this full course for beginners. Bootstrap is the most popular CSS framework. It allows web developers to quickly design and customize responsive mobile-first sites.',
     category: 'css',
   },
   {
-    _id: 'l4TifMV22wc',
-    title: 'NBA 2022 Season Is FIRE 🔥 MOMENTS',
+    _id: 'gyMwXuJrbJQ',
+    title:
+      'Learn Blockchain, Solidity, and Full Stack Web3 Development with JavaScript – 32-Hour Course',
     description:
-      'NBA 2022 Season Is FIRE 🔥 MOMENTS includes players such as LeBron James, Stephen Curry, LaMelo Ball, Luka Doncic, Russell Westbrook, Joel Embiid, Giannis Antetokounmpo and many more NBA Superstars!',
+      "This course will give you a full introduction into all of the core concepts related to blockchain, smart contracts, Solidity, ERC20s, full-stack Web3 dapps, decentralized finance (DeFi), JavaScript, TypeScript, Chainlink, Ethereum, upgradable smart contracts, DAOs, the graph, moralis, aave, IPFS, and more. Follow along with the videos and you'll be a blockchain wizard in no time!",
     category: 'javascript',
   },
   {
-    _id: 'WaYAhkH2cJM',
-    title: 'TOP 10 MOST EPIC NBA MOMENTS EVER',
+    _id: 'F2JCjVSZlG0',
+    title: 'React / Typescript Tutorial - Build a Quiz App',
     description:
-      'NBA most epic  MOMENTS includes players such as LeBron James, Stephen Curry, LaMelo Ball, Luka Doncic, Russell Westbrook and many more NBA Superstars!',
+      'Learn how to use React and TypeScript to create a quiz app project. You will also learn how to use Styled-Components with React.',
     category: 'reactjs',
   },
   {
-    _id: '5W851X3Nw2A',
-    title: "Devonte' Graham LONGEST GAME WINNING",
+    _id: '2QQGWYe7IDU',
+    title: 'MongoDB Crash Course 2022',
     description:
-      "Shai hits a nearly impossible shot to tie... then Devonte' Graham hits the miracle 65 foot shot for the win! #TissotBuzzerBeater",
+      'In this video, I will introduce you to MongoDB Atlas, the multi-cloud application data platform from MongoDB, and walk you through how to set up and connect to the database, loading sample data and performing CRUD operations. ',
     category: 'mongodb',
   },
 ];
