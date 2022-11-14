@@ -1,6 +1,6 @@
 const getFilteredVideos = (videos, category, searchKey) => {
   return videos.filter(video => {
-    if (category === 'All') return videos;
+    if (category === 'all') return videos;
     return video.category === category;
   });
   // .filter(
